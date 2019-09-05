@@ -7,7 +7,6 @@ export default class Tortuga{
     }
 
   correrTortuga(){
-
         if(this._corredor.correr() <= 50){
             this._posicion += 3;
         }else if(this._corredor.correr() <= 70){
