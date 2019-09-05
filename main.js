@@ -7,8 +7,8 @@ class Main{
             let liebre = new Corredor("eduardo")
 
             while(tortuga._posicion <= 90 && liebre._posicion <= 90){
-                tortuga.correrTortuga();
-                liebre.avanzaLiebre();
+                tortuga.correr();
+                liebre.correr();
             }
 
             if(tortuga._posicion >= 90 && liebre._posicion >= 90){
