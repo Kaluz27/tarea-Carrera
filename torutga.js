@@ -1,19 +1,25 @@
 import Corredor from "./corredor";
 
-export default class Tortuga{
-    constructor(){
-        this._corredor = new Corredor();
+export default class Tortuga extends Corredor {
+    constructor(nombre) {
+        super(nombre)
         this._posicion = 0;
     }
 
-  correrTortuga(){
-        if(this._corredor.correr() <= 50){
+    get posicion() {
+        this._posicion;
+    }
+
+    correr() {
+
+        let recorrido = Math.trunc((Math.random() * 100 + 1));
+        if (recorrido <= 50) {
             this._posicion += 3;
-        }else if(this._corredor.correr() <= 70){
+        } else if (recorrido <= 70) {
             this._posicion -= 3;
-        }else if(this._corredor.correr() <= 100){
+        } else if (recorrido <= 100) {
             this._posicion += 1;
         }
-        return this._corredor.correr();
+        return recorrido;
     }
 }

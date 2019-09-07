@@ -1,14 +1,16 @@
-import Corredor from './corredor.js';
+import Tortuga from './torutga.js';
+import Liebre from './liebre.js';
 
 class Main{
     constructor(){
         document.getElementById('btn').addEventListener('click',()=>{ 
-            let tortuga = new Corredor("pedro");
-            let liebre = new Corredor("eduardo")
+            let tortuga = new Tortuga("pedro");
+            let liebre = new Liebre("eduardo")
 
             while(tortuga._posicion <= 90 && liebre._posicion <= 90){
                 tortuga.correr();
                 liebre.correr();
+                console.log(`Liebre: ${liebre1.posicion}  tortuga: ${tortuga1.posicion}`);
             }
 
             if(tortuga._posicion >= 90 && liebre._posicion >= 90){

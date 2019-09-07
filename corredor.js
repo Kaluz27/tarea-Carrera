@@ -7,12 +7,8 @@ export default class Corredor {
     get nombre(){
         return this._nombre;
     }
-    get posicion() {
-        return this._posicion;
+    set nombre(nuevoNombre){
+        this._nombre = nuevoNombre;
     }
     
-    correr(){
-        let correr = Math.trunc(Math.random()* 100 + 1);
-        return correr;
-    }
     }
